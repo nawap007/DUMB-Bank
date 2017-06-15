@@ -2,13 +2,14 @@
 This application was generated using JHipster 4.0.6, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.0.6](https://jhipster.github.io/documentation-archive/v4.0.6).
 
 
+Pessimistic Lock is taken over PULL(Withdrawal) and PUSH(Deposit) transactions.i.e. no two transactions can update account balance simultaneously.Pessimistic lock can handle traffic of 50 TPS.
+
 # Development
 
-Pessimistic Lock is taken over PULL(Withdrawal) and PUSH(Deposit) transactions.i.e. no two transactions can update account balance simultaneously.
 
-### DUMBANK.postman_collection.json file can be imported on Postman App which have all rest endpoints listed in it.
+DUMBANK.postman_collection.json file can be imported on Postman App which have all rest endpoints listed in it.
 
-### DUMBANK.sql dump can be imported in Mysql db.
+DUMBANK.sql dump can be imported in Mysql db.
 
 Please insert required data if Mysql dump is not imported.
 
