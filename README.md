@@ -4,6 +4,8 @@ This application was generated using JHipster 4.0.6, you can find documentation 
 ## Development
 
 Please enter required data in case Mysql dump is not imported.
+
+
 INSERT INTO `bank`.`transaction_type` (`transaction_type_id`, `remarks`, `transaction_type_name`) VALUES ('1', 'credit', 'push');
 INSERT INTO `bank`.`transaction_type` (`transaction_type_id`, `remarks`, `transaction_type_name`) VALUES ('2', 'debit', 'pull');
 
