@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DUMBANK",
+		"_postman_id": "36bb1dcd-0a37-43c8-732a-6ac2fa83e55a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create account",
+			"request": {
+				"url": "http://localhost:8080/create/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\":\"Raj\",\n\t\"lastName\":\"kumar\",\n\t\"email\":\"pawan1@gmail.com\"\n\t\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw money",
+			"request": {
+				"url": "http://localhost:8080/transaction/pull",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\":\"1014975498359882\",\n\t\"amount\":100.00\n\t\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit money",
+			"request": {
+				"url": "http://localhost:8080/transaction/push",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"accountNumber\":\"1014975498359882\",\n\t\"amount\":100.00\n\t\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get acc detail",
+			"request": {
+				"url": "http://localhost:8080/accountDetails/1014975498359882",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all transactions",
+			"request": {
+				"url": "http://localhost:8080/transaction/all/1014975498359882",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
